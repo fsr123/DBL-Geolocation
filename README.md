@@ -27,15 +27,15 @@ The original dataset requires download from Twitter and it takes time, thus I up
 
 Downloaded data (For data preprocessing, exploration and visualisation)
 
-* [sagemaker_train.jl](/dataset/sagemaker_train.jl)
-* [sagemaker_validation.jl](/dataset/sagemaker_validation.jl)
-* [sagemaker_test.jl](/dataset/sagemaker_test.jl)
+* sagemaker_train.jl:/dataset/sagemaker_train.jl
+* sagemaker_validation.jl:/dataset/sagemaker_validation.jl
+* sagemaker_test.jl:/dataset/sagemaker_test.jl
 
 Transformed data after the data exploration (for scikit-learn and PyTorch training and evaluation)
 
-* [sagemaker_train.json](/dataset/sagemaker_train.json)
-* [sagemaker_validation.json](/dataset/sagemaker_validation.json)
-* [sagemaker_test.json](/dataset/sagemaker_test.json)
+* sagemaker_train.json(/dataset/sagemaker_train.json)
+* sagemaker_validation.json(/dataset/sagemaker_validation.json)
+* sagemaker_test.json(/dataset/sagemaker_test.json)
 
 #### Code
 Each script is self-contained. I've added requirements.txt for dependency installation for virtualenv.
@@ -51,24 +51,24 @@ Each script is self-contained. I've added requirements.txt for dependency instal
 These models can be directly re-used in evaluation scripts to generate results.
 All scikit-learn models are ending with .joblib
 
-* [LR.joblib](/models/LR.joblib): Logistic Regression with L1 regularisations
-* [SVM.joblib](/models/SVM.joblib): Linear kernel SVM
-* [MB.joblib](/models/MB.joblib): Multinomial Bayes
-* [RF.joblib](/models/RF.joblib): Random Forest
-* [MLP.joblib](/models/MLP.joblib): Multilayer Preceptron
+* LR.joblib(/models/LR.joblib): Logistic Regression with L1 regularisations
+* SVM.joblib(/models/SVM.joblib): Linear kernel SVM
+* MB.joblib(/models/MB.joblib): Multinomial Bayes
+* RF.joblib(/models/RF.joblib): Random Forest
+* MLP.joblib(/models/MLP.joblib): Multilayer Preceptron
 
 Fine-tuning of DistilBert models:
 
-* [pytorch_distilbert_9.bin](/models/pytorch_distilbert_9.bin): Bert model
-* [vocab_distilbert_9.bin](/models/vocab_distilbert_9.bin): Bert vocabulary
+* pytorch_distilbert_9.bin(/models/pytorch_distilbert_9.bin): Bert model
+* vocab_distilbert_9.bin(/models/vocab_distilbert_9.bin): Bert vocabulary
 
 Resource file (required for evaluations):
 
-* [city2coords.jl](/dataset/city2coords.jl): city names mapping to lat/long values for distance-based metric
-* [label_map.json](/dataset/label_map.json): label maps for Bert model (can be regenerated on the fly)
-* [datalist.json](/modeltest/datalist.json): data list for visualization
+* city2coords.jl(/dataset/city2coords.jl): city names mapping to lat/long values for distance-based metric
+* label_map.json(/dataset/label_map.json): label maps for Bert model (can be regenerated on the fly)
+* datalist.json(/modeltest/datalist.json): data list for visualization
 
 Visualization：We visualize the experimental results in our system on the web page and check the difference between the predicted value and the true value.
 
-* [visualization](/visualization):System Visualization
+* visualization(/visualization):System Visualization
 
